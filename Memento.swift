@@ -95,9 +95,10 @@ class ConcreteStringMemento: Memento, CustomStringConvertible {
  Definition: facilities Originator and
  
  Roles:
-    - contain an internal record of Mementos for showingHistory() and undo()
+    - (may) contain an internal record of Mementos
     - defines a simplied consumable API for interacting with the Originator (directly consumes API from Originator)
         - ex. undo(), backup()
+        - alternatively, it can be a cache like UserDefaults or Keychain
 */
 
 
